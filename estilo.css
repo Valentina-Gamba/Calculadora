@@ -1,0 +1,27 @@
+html {
+    font-family: 'Kanit', sans-serif;
+}
+
+body {
+    background-color: #FBE4FF;
+}
+
+.formulario {
+    width: 53rem;
+    height: 26rem;
+    border-style: solid;
+    border-radius: 2rem;
+    padding: 63px 60px 63px 60px;
+    margin-top: 9%;
+    margin-left: 12%;
+}
+
+.numeros button {
+    width: 43%;
+    height: 80%;
+    border-radius: 12px;
+}
+
+.numeros .col-3 {
+    height: 3.5rem;
+}

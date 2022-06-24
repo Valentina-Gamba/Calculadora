@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Calculadora</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="estilo.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital@1&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <form method="post">    
+                <div class="formulario">
+                    <div class="row">
+                        <div align = "center" class="col-5">
+                            <input READONLY id="num1" name="num1" type="number">
+                        </div>
+                        <div align="center" class="col" id="operacion"></div>
+                        <div align = "center" class="col-5" >
+                            <input id="num2" name="num2" type="number">
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="row numeros">
+                        <div class="col-3" align = "center" >
+                            <Button id="uno"> 1 </Button>
+                        </div>
+                        <div class="col-3" align = "center">
+                            <Button id="dos"> 2 </Button>
+                        </div>
+                        <div class="col-3" align = "center">
+                            <Button id="tres"> 3 </Button>
+                        </div>
+                        <div class="col-3" align = "center">
+                            <Button id="suma" name="suma"> + </Button>
+                        </div>
+                        <div class="col-3" align = "center">
+                            <Button id="cuatro"> 4 </Button>
+                        </div>
+                        <div class="col-3" align = "center">
+                            <Button id="cinco"> 5 </Button>
+                        </div>
+                        <div class="col-3" align = "center">
+                            <Button id="seis"> 6 </Button>
+                        </div>
+                        <div class="col-3" align = "center">
+                            <Button id="resta" name="resta"> - </Button>
+                        </div>
+                        <div class="col-3" align = "center">
+                            <Button id="siete"> 7 </Button>
+                        </div>
+                        <div class="col-3" align = "center">
+                            <Button id="ocho"> 8 </Button>
+                        </div>
+                        <div class="col-3" align = "center">
+                            <Button id="nueve"> 9 </Button>
+                        </div>
+                        <div class="col-3" align = "center">
+                            <Button id="multiplicacion" name="multiplicacion"> X </Button>
+                        </div>
+                        <div class="col-3" align = "center">
+                            <a href="inicio.html"><button class="btn btn-danger">C</button></a>
+                        </div>
+                        <div class="col-3" align = "center">
+                            <Button id="cero"> 0 </Button>
+                        </div>
+                        <div class="col-3" align = "center">
+                            <button id="resultado" name="resultado" class="btn btn-success"> = </button>
+                        </div>
+                        <div class="col-3" align = "center">
+                            <Button id="division" name="division"> / </Button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+        
+        <!-- Button trigger modal -->
+        <button type="button" id="tabla" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modelId">
+            Tabla
+        </button>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                        <div class="modal-header">
+                                <h5 class="modal-title">Tabla de operaciones</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                            </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <table border="2">
+                                <thead>
+                                    <tr>
+                                        <th> Numero 1 </th>
+                                        <th> operacion </th>
+                                        <th> Numero 2 </th>
+                                        <th> Resultado </th>
+                                        <th> Fecha </th>
+                                    </tr>
+                                </thead>
+                                <tbody id="dataTable">
+                                   
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+            <script src="./ajax.js"></script>
+    </body>
+</html>
